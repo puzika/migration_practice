@@ -1,5 +1,6 @@
 const express = require('express');
 const server = express();
+const cors = require('cors');
 const dotenv = require('dotenv');
 const path = require('path');
 
@@ -8,6 +9,10 @@ dotenv.config({ path: path.join(__dirname, '.env') });
 const PORT = process.env.PORT ?? 3300;
 
 server.use(express.static(path.join(__dirname, 'public')));
+
+server.use(cors({
+  origin: 'http://localhost:3001',
+}))
 
 server.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'home', 'page.html'));
