@@ -12,16 +12,6 @@ module.exports = {
     clean: true,
     assetModuleFilename: '[name][ext]',
   },
-  devServer: {
-    static: {
-      directory: path.resolve(__dirname, 'dist'),
-    },
-    port: 3000,
-    open: true,
-    compress: true,
-    hot: true,
-    historyApiFallback: true,
-  },
   module: {
     rules: [
       {

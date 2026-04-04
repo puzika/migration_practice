@@ -1,0 +1,41 @@
+:root {
+  --clr-base: #333;
+  --clr-font: #fff;
+  --clr-primary: #151515;
+  --clr-primary-lt: #222222;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--clr-base);
+  font-size: 1.6rem;
+  color: var(--clr-font);
+  min-height: 100vh;
+}
+
+a {
+  padding: .5rem;
+  border-bottom: .1rem solid transparent;
+  transition: all .2s;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  border-color: var(--clr-font);
+}
