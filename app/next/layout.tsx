@@ -1,14 +1,1 @@
-import type { ReactNode } from "react"
-
-type NextRootLayout = {
-  children: ReactNode | ReactNode[],
-}
-
-export default function NextRootLayout({ children }: NextRootLayout) {
-  return (
-    <>
-      <nav></nav>
-      { children }
-    </>
-  )
-}
+export { RootLayout as default } from "../../src/app/layouts/RootLayout";
