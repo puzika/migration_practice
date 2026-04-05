@@ -11,8 +11,8 @@
     "build:client": "webpack",
     "dev:client": "webpack serve",
     "dev:server": "nodemon",
-    "dev:next": "next dev",
-    "build:next": "next build"
+    "dev:next": "next dev --webpack",
+    "build:next": "next build --webpack"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
